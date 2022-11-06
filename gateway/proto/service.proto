@@ -1,0 +1,16 @@
+
+syntax = "proto3";
+
+package template;
+
+message TemplateRequest {}
+
+message TemplateResponse {
+  string message = 1;
+}
+
+service TemplateService {
+  rpc TemplateFunction (TemplateRequest) returns (TemplateResponse) {}
+}
+
+
